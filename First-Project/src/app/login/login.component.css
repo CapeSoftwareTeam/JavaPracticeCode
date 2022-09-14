@@ -1,0 +1,49 @@
+.forms{
+    width: 450px;
+    background-color: aquamarine;
+    padding:20px 20px;
+    padding-right: 20px;
+    margin-left: 31%;
+    margin-top: 150px;
+    border-radius: 50px;
+}
+.formContent{
+    margin: 20px;
+}
+input[type="email"],input[type="text"],input[type="password"]{
+    width: 100%;
+    font-size: larger;
+    padding: 12px 1px ;
+    border-radius: 5px;
+}
+h2{
+    text-align: center;
+}
+#forget{
+    margin-left: 340px;
+}
+#submit{
+    margin-left: 165px;
+    width: 25%;
+    padding: 10px;
+    background-color: #F7CACD;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color:black;
+    color: white;
+}
+#reg-btn{
+    background-color:rgb(190, 25, 25);
+    color: white;
+    border-radius: 10px;
+}
+#btn-fp{
+    background-color:rgb(58, 17, 104);
+    color: white;
+    border-radius: 10px;
+}
+label{
+    font-size: 1.5rem;
+}

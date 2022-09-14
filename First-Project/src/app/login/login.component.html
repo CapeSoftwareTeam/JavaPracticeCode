@@ -1,0 +1,32 @@
+<body><div class="body">
+    <form [formGroup]="login" class="forms">
+        <h2>Login Page</h2>
+        <div class="form-control">
+            <label>Email:</label>
+            <input type="email" formControlName="Email" placeholder="{{mailHolder}}">
+        </div>
+            <br>
+
+        <div class="form-control">
+        <label>User Name:</label>
+        <input type="text" FormControlName="UserName" [value]="name">
+       </div><br>
+       <div class="form-control">
+        <label>Password:</label>
+        <input type="password" FormControlName="Password" placeholder="{{passwordHolder}}">
+       </div><br>
+       <div class="form-control" id="forget">
+        <button routerLink="/forgetPassword" id="btn-fp">ForgetPassword</button>
+        <!-- <button (click)="forgetPassword()">ForgetPassword</button> -->
+       </div><br>
+       <div class="form-control" id="register">
+        <button type="button" id="reg-btn" routerLink="/register">Click to Register</button>
+       </div><br>
+       <div class="form-control">
+        <button type="submit" (click)="home()" id="submit">Submit</button>
+       </div><br>
+      
+       
+    </form>
+</div>
+</body>

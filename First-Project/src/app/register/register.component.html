@@ -1,0 +1,31 @@
+<div class="registerForm">
+    <h2>Register here</h2>
+       <form class="Register" [formGroup]="RegisterForm">
+        <div class="FormContent">
+        <label>FirstName:</label>
+        <input type="text" [value]="name" FormControlName="firstName">
+       </div>
+       <div class="FormContent">
+        <label>LastName:</label>
+        <input type="text" FormControlName="lastName" placeholder="{{placeholder}}">
+       </div>
+       <div class="FormContent"> 
+        <label>mailId:</label>
+        <input type="email" FormControlName="mailId" placeholder="{{mailHolder}}">
+       </div>
+       <div class="FormContent">
+        <label>Password:</label>
+        <input type="password" FormControlName="password" placeholder="{{passwordHolder}}">
+       </div>
+        <div class="FormContent">
+        <label>Confirm-Password:</label>
+        <input type="password" FormControlName="ConfirmPassword" placeholder="{{passwordHolder}}">
+        </div>
+        <div class="submit">
+            <button id="submit" type="button"  routerLink="/login" [disabled]="disabled">Submit</button>
+            <!-- (click)="FormValidate()" -->
+        </div>
+        <button id="cancel" type="button" routerLink="/login">Cancel</button>
+       </form>
+</div>
+

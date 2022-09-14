@@ -1,0 +1,24 @@
+<!--
+<p>{{ title }}</p>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <marquee behavior="" direction="">Hi User,welcome to our site.You can see lots of products in our webpage.</marquee>
+    <div class="home">
+        <p>{{title}}</p>
+        <p>Welcome to Home Page</p>
+        <button class="btn-login" routerLink="/login">Click here</button>
+
+         <h1 *ngIf="show">{{name}}</h1> 
+        <button (click)="toggleButton1()">click</button>
+    </div>
+</body>
+</html>
